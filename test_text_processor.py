@@ -60,12 +60,17 @@ def test_count_words_empty_string():
 
 def test_is_palindrome_true_false():
     """8. Assert True/False - boolean ellenőrzés"""
-    proceassor = TextProcessor()
-    result_true = proceassor.is_palindrome("Anna")
-    result_false = proceassor.is_palindrome("Hello")
-    
+    processor = TextProcessor()
+    result_true = processor.is_palindrome("Anna")
+    result_false = processor.is_palindrome("Hello")
+    assert result_true is True
+    assert result_false is False
+    assert processor.is_palindrome("") is False
+    assert processor.is_palindrome("Indul a görög aludni") is True
 
 def test_remove_spaces_multiple_asserts():
     """9. Több assert egy tesztben"""
     projector = TextProcessor()
-    result = projector.remove_spaces("a b c")
+    result = projector.remove_spaces(" a b c ")
+    assert len(result) == 3
+    
