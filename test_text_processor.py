@@ -6,7 +6,7 @@ def test_capitalize_text_equal():
     """1. Assert equal - egyenlőség ellenőrzés"""
     pass
 
-
+# 2. Assert not equal - nem egyenlő
 def test_capitalize_text_not_equal():
     """2. Assert not equal - nem egyenlő"""
     pass
